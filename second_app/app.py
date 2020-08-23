@@ -1,12 +1,13 @@
-from utils.metrics import r2
-from utils.data_gen import generate_linear_data, split_dataset
-from first_app.app import Model
 import sys
 import os
 
 # Enable import from outer directory
 file_path = os.path.dirname(os.path.realpath(__file__))
 sys.path.insert(0, file_path + "/..")
+
+from utils.metrics import r2  # noqa
+from utils.data_gen import generate_linear_data, split_dataset  # noqa
+from first_app.app import Model  # noqa
 
 
 def main():

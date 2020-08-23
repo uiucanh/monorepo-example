@@ -1,12 +1,13 @@
-from utils.data_gen import generate_linear_data, split_dataset
-from utils.metrics import mean_absolute_percentage_error, r2
-from sklearn.linear_model import LinearRegression
 import os
 import sys
 
 # Enable import from outer directory
 file_path = os.path.dirname(os.path.realpath(__file__))
 sys.path.insert(0, file_path + "/..")
+
+from utils.data_gen import generate_linear_data, split_dataset  # noqa
+from utils.metrics import mean_absolute_percentage_error, r2  # noqa
+from sklearn.linear_model import LinearRegression  # noqa
 
 
 class Model:

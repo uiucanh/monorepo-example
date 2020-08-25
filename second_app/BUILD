@@ -5,7 +5,6 @@ python_library(
     ],
     dependencies = [
         "first_app",
-        "utils",
     ],
 )
 
